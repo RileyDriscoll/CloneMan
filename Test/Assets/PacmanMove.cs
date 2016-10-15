@@ -38,4 +38,9 @@ public class PacmanMove : MonoBehaviour {
 		RaycastHit2D hit = Physics2D.Linecast(pos + dir, pos);
 		return (hit.collider == GetComponent<Collider2D>());
 	}
+	/*
+	void OnTriggerEnter2D(Collider2D co) {
+		if (co.name == "pacman 2")
+			Destroy(gameObject);
+	}*/
 }
